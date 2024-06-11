@@ -40,12 +40,8 @@ class PokemonsRepositoryImpl implements PokemonRepository {
 
   @override
   Future<Either<Failure, Pokemon>> getPokemon(int id) async {
-    print('entro5');
       try {
-        print('entro6');
         final Pokemon resp = await pokemonsRemoteDataSource.getPokemon(id);
-        print('resp22');
-        print(resp);
         return Right(resp);
       } on HttpException{
         return Left(ServerFailure());

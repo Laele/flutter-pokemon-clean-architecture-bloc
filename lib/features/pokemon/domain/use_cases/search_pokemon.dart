@@ -10,7 +10,6 @@ class SearchPokemonUseCase {
   SearchPokemonUseCase({required this.repository});
 
   Future<Either<Failure, Pokemon>> call( int id ){
-    print('entro4');
     return repository.getPokemon(id);
   }
 
