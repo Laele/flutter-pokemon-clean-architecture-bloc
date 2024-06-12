@@ -1,4 +1,4 @@
-# flutter_clean_arquitecture_example
+# flutter_clean_architecture_example
 
 Flutter project based in Rick Code Clean Architecture tutorial. This project consults to a Pokemon API to get Pokemons using Clean Architecuture and bloc as state management.
 
